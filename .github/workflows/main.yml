@@ -35,9 +35,9 @@ jobs:
       
       # Software composition analysis
       - name: Snyk
-        uses: snyk/actions@0.1.1
-      env:
-        SNYK_TOKEN: ${{ env.DOTNET_VERSION }}
+        uses: snyk/actions/dotnet@master
+        env:
+          SNYK_TOKEN: ${{ env.DOTNET_VERSION }}
 
       # Run dotnet build and publish
       - name: dotnet build and publish

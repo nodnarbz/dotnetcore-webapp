@@ -43,7 +43,7 @@ jobs:
       - name: Snyk
         uses: snyk/actions/dotnet@master
         env:
-          SNYK_TOKEN: ${{ env.DOTNET_VERSION }}
+          SNYK_TOKEN: ${{ env.SNYK_TOKEN }}
           
       # Deploy to Azure Web apps
       - name: 'Run Azure webapp deploy action using publish profile credentials'
